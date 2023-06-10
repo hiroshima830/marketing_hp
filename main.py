@@ -14,7 +14,7 @@ def index():
 @app.route('/send-email', methods=['POST'])
 def send_email():
     sender_email = 'bullpen.hiroshima@gmail.com'  # 送信元のメールアドレス
-    sender_password = settings.mailpass  # 送信元のメールアカウントのパスワード
+    sender_password = settings.mailpass  # 送信元のメールアカウントのパス
 
     # メールの作成
     email = request.form['email']
