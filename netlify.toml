@@ -1,3 +1,8 @@
 [build]
-  command = "python app.py"  # Flaskアプリケーションを起動するコマンド
-  publish = "static"  # ビルドディレクトリとしてstaticディレクトリを指定
+  command = "python main.py"
+  publish = "static"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
