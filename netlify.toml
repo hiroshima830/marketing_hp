@@ -1,4 +1,9 @@
-[[redirects]]
+[build]
+  command = "python main.py"  # ビルド時に実行するコマンド
+  publish = "templates"  # 公開するディレクトリのパス
+
+
+ [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
