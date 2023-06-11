@@ -1,5 +1,5 @@
 [build]
-  command = "python main.py"
+  command = "python /opt/build/repo/static/main.py"
   publish = "static"
 
 [[redirects]]
