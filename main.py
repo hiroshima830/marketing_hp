@@ -1,7 +1,9 @@
-from flask import Flask, render_template, request
+import settings
+import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import smtplib, settings
+
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
