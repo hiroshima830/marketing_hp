@@ -1,5 +1,5 @@
 [build]
-  command = "python main.py"
+  command = "gunicorn app:app"
   publish = "static"
 
 [[redirects]]
