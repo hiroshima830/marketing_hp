@@ -1,5 +1,5 @@
 [build]
-  command = "python main.py"
+  command = "python3 main.py"
   publish = "static"
 
 [[redirects]]
