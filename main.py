@@ -13,6 +13,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/blog')
+def blog():
+    return render_template('blog_side.html')
+
+
 @app.route('/send-email', methods=['POST'])
 def send_email():
     sender_email = 'bullpen.hiroshima@gmail.com'  # 送信元のメールアドレス
@@ -22,15 +27,15 @@ def send_email():
     email = request.form['email']
     name = request.form['name']
 
-    subject = f'初回無料相談に関するお問い合わせ'
+    subject = f'お問い合わせありがとうございます。'
     body = f'{name}様\n' \
-           f'ご連絡ありがとうございます。お手数ですが、以下の質問にお答えいただき返信をお願い致します。\n' \
+           f'ご連絡ありがとうございます。お手数ですが、以下の質問にお答えいただき返信をお願い致します。5番のみでも構いません。\n' \
            '\n' \
            f'1.貴社名\n' \
            '\n' \
            f'2.貴社ウェブサイトURL\n' \
            '\n' \
-           f'3.ご自身のビジネスについて教えてください。具体的な商品やサービス、ターゲットなどの情報をお教えいただけると助かります。\n' \
+           f'3.事業について教えてください。具体的な商品やサービス、ターゲットなど。\n' \
            '\n' \
            f'4.集客のために既に試してみたことや、経験した成果について教えていただけますか？\n' \
            '\n' \
