@@ -15,7 +15,7 @@ def index():
 
 @app.route('/blog')
 def blog():
-    return render_template('blog_side.html')
+    return render_template('blog.html')
 
 
 @app.route('/send-email', methods=['POST'])
